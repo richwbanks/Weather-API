@@ -1,0 +1,91 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1500390365106-166bb67248d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(140%);
+}
+   
+.icon {
+  height: 40px;
+  width: 36px;
+} 
+
+.big-div{
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: center;
+
+}
+
+.title-div{
+  text-align: center;
+  border: #8D8741 5px solid;
+  background: rgb(179, 145, 100, 0.9);
+  color: rgb(77, 46, 7);
+  text-shadow: 1px 1px #FBEEC1;
+  font-family: 'Righteous', cursive;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+#icon{
+  color: rgb(118, 169, 199);
+}
+
+.btn-toolbar{
+  text-align: center;
+  justify-content: center;
+  margin-left: 35px;
+  height: 45px;
+}
+
+.filter-title{
+  margin-left: 35px;
+  color: rgb(179, 145, 100, 0.9);
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.all-temperatures{
+  display: grid;
+}
+
+.container-filter{
+  justify-content: center;
+  overflow: hidden;
+}
+
+.big-background-div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.city-div{
+  border: #8D8741 5px solid;
+  text-align: center; 
+  margin: 10px;
+  float: left;
+  background-color: rgb(118, 169, 199, 0.7);
+  color: rgb(77, 46, 7);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  min-width: 208px;
+  max-width: 208px;
+  min-height: 170px;
+  max-height: 170px;
+  border-radius: 200px;
+}
+
+h5{
+  padding-top: 25px;
+}
+
+.condition{
+  margin-bottom: 0px;
+}

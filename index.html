@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Live Weather API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/Weather_API.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Righteous&display=swap" rel="stylesheet">
+    
+  <div class="small-background-div">
+    <section>
+      <div class="row big-div">
+        <div class="title-div col-lg-4 col-md-4 col-sm-4 col-xs-6"> 
+          <h1>Live Weather API <i class="fas fa-cloud-sun" id="icon"></i></h1>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="big-background-div">
+
+    <section class="all-temperatures">
+      <div class="row container-filter">
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Atlanta, GA</h5>
+          </div>
+          <div>
+            <img class="icon_ATL">
+            <p class="weather_ATL condition"></p>
+            <p class="temp_ATL"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Austin, TX</h5>
+          </div>
+          <div>
+            <img class="icon_AU">
+            <p class="weather_AU condition"></p>
+            <p class="temp_AU"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Boston, MA</h5>
+          </div>
+          <div>
+            <img class="icon_BO">
+            <p class="weather_BO condition"></p>
+            <p class="temp_BO"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Charlotte, NC</h5>
+          </div>
+          <div>
+            <img class="icon_CHA">
+            <p class="weather_CHA condition"></p>
+            <p class="temp_CHA"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Chicago, IL</h5>
+          </div>
+          <div>
+            <img class="icon_CHI">
+            <p class="weather_CHI condition"></p>
+            <p class="temp_CHI"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Columbus, OH</h5>
+          </div>
+          <div>
+            <img class="icon_CO">
+            <p class="weather_CO condition"></p>
+            <p class="temp_CO"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Dallas, TX</h5>
+          </div>
+          <div>
+            <img class="icon_DL">
+            <p class="weather_DL condition"></p>
+            <p class="temp_DL"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Denver, CO</h5>
+          </div>
+          <div>
+            <img class="icon_DV">
+            <p class="weather_DV condition"></p>
+            <p class="temp_DV"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Detroit, MI</h5>
+          </div>
+          <div>
+            <img class="icon_DE">
+            <p class="weather_DE condition"></p>
+            <p class="temp_DE"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Fort Worth, TX</h5>
+          </div>
+          <div>
+            <img class="icon_FW">
+            <p class="weather_FW condition"></p>
+            <p class="temp_FW"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Houston, TX</h5>
+          </div>
+          <div>
+            <img class="icon_HOU">
+            <p class="weather_HOU condition"></p>
+            <p class="temp_HOU"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Indianapolis, IN</h5>
+          </div>
+          <div>
+            <img class="icon_ID">
+            <p class="weather_ID condition"></p>
+            <p class="temp_ID"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Jacksonville, FL</h5>
+          </div>
+          <div>
+            <img class="icon_JK">
+            <p class="weather_JK condition"></p>
+            <p class="temp_JK"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Los Angeles, CA</h5>
+          </div>
+          <div>
+            <img class="icon_LA">
+            <p class="weather_LA condition"></p>
+            <p class="temp_LA"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Miami, FL</h5>
+          </div>
+          <div>
+            <img class="icon_MI">
+            <p class="weather_MI condition"></p>
+            <p class="temp_MI"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>New York, NY</h5>
+          </div>
+          <div>
+            <img class="icon_NY">
+            <p class="weather_NY condition"></p>
+            <p class="temp_NY"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Philadelphia, PA</h5>
+          </div>
+          <div>
+            <img class="icon_PHA">
+            <p class="weather_PHA condition"></p>
+            <p class="temp_PHA"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Phoenix, AZ</h5>
+          </div>
+          <div>
+            <img class="icon_PHX">
+            <p class="weather_PHX condition"></p>
+            <p class="temp_PHX"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>San Antonio, TX</h5>
+          </div>
+          <div>
+            <img class="icon_SA">
+            <p class="weather_SA condition"></p>
+            <p class="temp_SA"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>San Diego, CA</h5>
+          </div>
+          <div>
+            <img class="icon_SD">
+            <p class="weather_SD condition"></p>
+            <p class="temp_SD"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div class="city-name">
+            <h5>San Francisco, CA</h5>
+          </div>
+          <div>
+            <img class="icon_SF">
+            <p class="weather_SF condition"></p>
+            <p class="temp_SF"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>San Jose, CA</h5>
+          </div>
+          <div>
+            <img class="icon_SJ">
+            <p class="weather_SJ condition"></p>
+            <p class="temp_SJ"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Seattle, WA</h5>
+          </div>
+          <div>
+            <img class="icon_SE">
+            <p class="weather_SE condition"></p>
+            <p class="temp_SE"></p>
+          </div>
+        </div>
+        <div class="city-div col-lg-1 col-md-1 col-sm-1 col-xs-6">
+          <div>
+            <h5>Washington D.C.</h5>
+          </div>
+          <div>
+            <img class="icon_DC">
+            <p class="weather_DC condition"></p>
+            <p class="temp_DC"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/Weather_API.js"></script>
+
+
+
+</head> 
+</body>
+</html>
