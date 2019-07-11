@@ -20,7 +20,7 @@ body {
 .title-div{
   text-align: center;
   border: #8D8741 5px solid;
-  background: rgb(179, 145, 100, 0.9);
+  background: rgb(179, 145, 100);
   color: rgb(77, 46, 7);
   text-shadow: 1px 1px #FBEEC1;
   font-family: 'Righteous', cursive;
@@ -45,7 +45,7 @@ body {
 
 .filter-title{
   margin-left: 35px;
-  color: rgb(179, 145, 100, 0.9);
+  color: rgb(179, 145, 100);
   font-size: 28px;
   font-family: 'Quicksand', sans-serif;
 }
@@ -70,7 +70,7 @@ body {
   text-align: center; 
   margin: 10px;
   float: left;
-  background-color: rgb(118, 169, 199, 0.7);
+  background-color: rgb(118, 169, 199);
   color: rgb(77, 46, 7);
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
